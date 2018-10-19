@@ -116,25 +116,8 @@ $(document).ready(function() {
     });
 });
 
-/*$(document).ready(function() {
-  //复制图片
-    $("#J_ModalSure.btn-primary").before('<button type="button" style="color:#f03" class="btn copyimg">复制</button>');
-    $(".copyimg").click(function () {  
-        var Url2=$("#J_Modal").find('textarea');
-        Url2.select(); // 选择对象
-        document.execCommand("Copy");//复制
-        $(this).text("已复制");
-        $(".close").click();
-    });
-    $(".copyimg").mouseover(function() {
-        $(this).text("复制");
-    });
-    $(".copyimg").mouseleave(function() {
-        $(this).text("复制");
-    });
-});**/
 
-//
+//间距
 $(document).ready(function() {
  	var $hml2=$('<div class="yy_msg" style="display:none;"> <div class="yy_cl"></div> <div class="yy_tile">输入间距</div><div class="yy_input"><span>顶部增加高度</span>  <input placeholder="可不填" class="yy_toph" type="number">        <span>底部增加高度</span>        <input placeholder="可不填" class="yy_btmh" type="number">    </div>    <button class="yy_button">确定</button>    <i></i></div>');
 	$("body").append($hml2);

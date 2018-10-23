@@ -7,6 +7,7 @@
 ## 使用方法：
 **1.安装油猴脚本：
 >[点击查看软件页面](https://tampermonkey.net/)
+>如果无法打开chrome应用商店请使用360浏览器，在插件中搜索tampermonkey安装，然后下一步
 
 **2.安装脚本
 >[点击安装脚本](https://github.com/5iux/youhua/raw/master/youhua.user.js)

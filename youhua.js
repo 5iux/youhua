@@ -1,5 +1,14 @@
  $("#mytaobao-panel .col-main").before('<div class="zxbtn"><a href="https://wangpu.taobao.com/pcPageList.htm?#/selfDefine" target="_blank"><img src="https://img.alicdn.com/imgextra/i1/263817957/TB2XDx6X8PCIuJjSZPcXXccYFXa-263817957.png"></a></div>');
-
+$(document).ready(function() {
+	/* 添加样式表common.css */
+    $("head").append("<link>");
+    css = $("head").children(":last");
+    css.attr({
+        rel: "stylesheet",
+        type: "text/css",
+        href: "https://raw.githubusercontent.com/5iux/youhua/master/youhua.css"
+    });
+});
 $(document).ready(function(e) {
   //强制店铺装修到装修页面
  $("#J_QuickMenu").find("a:contains('店铺装修')").css('color', 'red');

@@ -1,6 +1,6 @@
  $("#mytaobao-panel .col-main").before('<div class="zxbtn"><a href="https://wangpu.taobao.com/pcPageList.htm?#/selfDefine" target="_blank"><img src="https://img.alicdn.com/imgextra/i1/263817957/TB2XDx6X8PCIuJjSZPcXXccYFXa-263817957.png"></a></div>');
 $(document).ready(function() {
-	/* 添加样式表common.css */
+	/* 添加样式表 */
     $("head").append("<link>");
     css = $("head").children(":last");
     css.attr({

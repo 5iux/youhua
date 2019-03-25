@@ -14,7 +14,7 @@
 // @match        *://siteadmin.taobao.com/preview.htm*
 // @match        *://login.taobao.com/member/login.jhtml*
 // @require      https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js
-// @require      https://raw.githubusercontent.com/5iux/youhua/master/youhua.js
+// @require      https://raw.githubusercontent.com/5iux/youhua/master/youhua.js?t=20190325
 // @grant        none
 // ==/UserScript==
 

@@ -11,8 +11,8 @@ $("#client-tab #client-mobile").removeClass("selected");
  $("#mobile-page").css("display","none");
  $(".shop-tmall.page-current").removeClass("page-current");*/
  //编辑器添加优化按钮    
- $(".ks-editor-tools .ks-editor-button").before('<div class="yy_yh1124" style="position:absolute;"><div class="yy_btn yy_btn01">优化链接</div><div class="yy_btn yy_btn02">去10px</div><div class="yy_btn yy_btn03">一键居中</div><div class="yy_btn yy_btn05">上下间距</div></div>');
- $(".ks-editor-tools .ks-editor-button").before('<div class="yy_yh1124" style="position:absolute;"><div class="yy_btn yy_btn01">优化链接</div></div>');
+ $(".form-default[name=editform]").before('<div class="yy_yh1124" style="position:absolute;"><div class="yy_btn yy_btn01">优化链接</div><div class="yy_btn yy_btn02">去10px</div><div class="yy_btn yy_btn03">一键居中</div><div class="yy_btn yy_btn05">上下间距</div></div>');
+ $(".form-default[name=customSetForm]").before('<div class="yy_yh1124" style="position:absolute;"><div class="yy_btn yy_btn01">优化链接</div></div>');
  $(".auto-rec-form.form-default").before('<div style="margin-top:400px; position:absolute;" class="yy_yh1124"><div class="yy_btn yy_btn01">优化链接</div></div>');
  //优化链接
  $(".yy_yh1124 .yy_btn01").click(function(e) {

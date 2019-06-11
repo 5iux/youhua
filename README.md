@@ -21,7 +21,8 @@
 ## 使用方法：
 **1.安装油猴插件：
 >[点击查看软件页面](https://tampermonkey.net/)
->如果无法打开chrome应用商店请使用360浏览器，在插件中搜索tampermonkey安装，然后下一步
+>装修后台浏览器优先推荐chrome，或者火狐浏览器
+>火狐浏览器无法直接装修操作，推荐我的文章 → [《使用火狐装修淘宝商家后台》](https://yyv.me/4748.html)
 
 **2.安装脚本
 >[点击安装脚本](https://github.com/5iux/youhua/raw/master/youhua.user.js)

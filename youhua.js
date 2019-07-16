@@ -24,6 +24,8 @@ $("#client-tab #client-mobile").removeClass("selected");
         a01=a01.replace(/href="\/\//g,'href="http://'); 
         a01=a01.replace(/href="https:\/\//g,'href="http://'); 
         a01=a01.replace(/\?scene=taobao_shop/g,''); 
+        a01=a01.replace(/data-pinit="registered"/g,''); 
+        a01=a01.replace(/data-spm-anchor-id="0.0.0.0"/g,''); 
         a01=a01.replace(/&quot;/g,'\''); 
         //a01=a01.replace(/&apos;/g,'\''); 
         $(".form-default").find("textarea").val(a01);

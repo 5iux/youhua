@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         韩都淘内优化连接
 // @namespace    https://5iux.github.io/youhua
-// @version      2019.09.25.2
-// @description  本脚本主要针对淘内后台优化，优化链接http缺失、一键居中、模块去除10像素间距等；店铺装修强制跳转至pc装修；装修后台增加新窗口打开，欢迎交流使用;
+// @version      2019.10.21.0
+// @description  本脚本主要针对淘内后台优化，优化链接http缺失、一键居中、模块去除10像素间距等；装修后台增加新窗口打开，欢迎交流使用;
 // @author       D.Young
 // @match        *://siteadmin.tmall.com/module*
 // @match        *://mai.taobao.com/seller_admin.htm*
@@ -14,7 +14,7 @@
 // @match        *://siteadmin.taobao.com/preview.htm*
 // @match        *://login.taobao.com/member/login.jhtml*
 // @require      https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js
-// @require      https://raw.githubusercontent.com/5iux/youhua/master/youhua.js?t=20190925
+// @require      https://raw.githubusercontent.com/5iux/youhua/master/youhua.js?t=20191021
 // @grant        GM_addStyle
 // @run-at       document-end
 // ==/UserScript==

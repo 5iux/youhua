@@ -5,7 +5,7 @@ $(document).ready(function(e) {
  $("#J_QuickMenu").find("a:contains('店铺装修')").css('color', 'red');
  $("#J_QuickMenu").find("a:contains('店铺装修')").attr('href', 'https://wangpu.taobao.com/pcPageList.htm?#/selfDefine');
    //强制跳转到PC装修
-$("#client-tab #client-pc").click();
+//$("#client-tab #client-pc").click();
   /*$("#client-tab #client-pc").addClass("selected");
 $("#client-tab #client-mobile").removeClass("selected");
  $("#mobile-page").css("display","none");

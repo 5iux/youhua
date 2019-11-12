@@ -11,16 +11,18 @@
 
 请勿重复添加，非前端人员忽略！
 ``` css
-
+/*1920居中*/
 .left465{ margin-left:-465px; width:1920px;}
+/*去10像素模块间距*/
 .up10{ margin-top: -10px;}
+/*自定义间距*/
 .h_jg{ width: 100%; clear: both; display: block;}
 
 ```
 
 
 ## 使用方法：
-**1.安装油猴插件：
+**1.安装油猴插件：   
 
 >[安装软件](https://tampermonkey.net/)
 

@@ -1,9 +1,14 @@
-$("#mytaobao-panel .col-main").before('<div class="zxbtn"><a href="https://wangpu.taobao.com/pcPageList.htm?#/selfDefine" target="_blank"><img src="https://img.alicdn.com/imgextra/i1/263817957/TB2XDx6X8PCIuJjSZPcXXccYFXa-263817957.png"></a></div>');
+$("#mytaobao-panel .col-main").before('<div class="zxbtn">\
+    <a href="https://wangpu.taobao.com/wirelessPageList.htm" target="_blank"><img src="https://img.alicdn.com/imgextra/i4/263817957/O1CN01WG9giL28eM4mTLRUo_!!263817957.png" alt=""></a>\
+    <a href="https://wangpu.taobao.com/pcPageList.htm?#/selfDefine" target="_blank"><img src="https://img.alicdn.com/imgextra/i2/263817957/O1CN01KseKdH28eM4jwB4Al_!!263817957.png"></a>\
+    <a href="https://meidian.play.admin.jaeapp.com/back/back_list.htm" target="_blank"><img src="https://img.alicdn.com/imgextra/i1/263817957/O1CN01mBdgDo28eM4lPscky_!!263817957.png" alt=""></a>\
+    <a href="https://wxbadmin.hz.taeapp.com/index.php?c=activity&m=index" target="_blank"><img src="https://img.alicdn.com/imgextra/i3/263817957/O1CN01cYWqsD28eM4iTgIyG_!!263817957.png" alt=""></a>\
+    </div>');
 $(document).ready(function(e) {
     $("#TPL_password_1").attr('type;', 'text');
   //强制店铺装修到装修页面
- $("#J_QuickMenu").find("a:contains('店铺装修')").css('color', 'red');
- $("#J_QuickMenu").find("a:contains('店铺装修')").attr('href', 'https://wangpu.taobao.com/pcPageList.htm?#/selfDefine');
+ /*$("#J_QuickMenu").find("a:contains('店铺装修')").css('color', 'red');
+ $("#J_QuickMenu").find("a:contains('店铺装修')").attr('href', 'https://wangpu.taobao.com/pcPageList.htm?#/selfDefine');*/
    //强制跳转到PC装修
 //$("#client-tab #client-pc").click();
   /*$("#client-tab #client-pc").addClass("selected");
@@ -11,7 +16,12 @@ $("#client-tab #client-mobile").removeClass("selected");
  $("#mobile-page").css("display","none");
  $(".shop-tmall.page-current").removeClass("page-current");*/
  //编辑器添加优化按钮    
- $(".form-default[name=editform]").before('<div class="yy_yh1124" style="position:absolute;"><div class="yy_btn yy_btn01">优化链接</div><div class="yy_btn yy_btn02">去10px</div><div class="yy_btn yy_btn03">一键居中</div><div class="yy_btn yy_btn05">上下间距</div></div>');
+ $(".form-default[name=editform]").before('<div class="yy_yh1124" style="position:absolute;">\
+    <div class="yy_btn yy_btn01">优化链接</div>\
+    <div class="yy_btn yy_btn02">去10px</div>\
+    <div class="yy_btn yy_btn03">一键居中</div>\
+    <div class="yy_btn yy_btn05">上下间距</div>\
+    </div>');
  $(".form-default[name=customSetForm]").before('<div class="yy_yh1124" style="position:absolute;"><div class="yy_btn yy_btn01">优化链接</div></div>');
  $(".auto-rec-form.form-default").before('<div style="margin-top:400px; position:absolute;" class="yy_yh1124"><div class="yy_btn yy_btn01">优化链接</div></div>');
  //优化链接
@@ -162,18 +172,3 @@ $(document).ready(function() {
     });
 });
 
-/*
-$(document).ready(function() {
-    $("#react-root article").onmouseover(function() {
-        //$(this).children(':eq(1)').addClass('.insbox');
-        var x=$(this).children(':eq(1)').find('img');
-        x.parent("div").addClass('insbox')
-    });
-    /*$(".ins_btn").each(function(index, el) {
-        $(this).parents(".insbox").find('img').addClass('ins_img');
-        $(this).click(function(event) {
-            
-        });
-    });
-});
-*/

@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         韩都淘内优化连接
+// @name         韩都衣舍淘内优化连接
 // @namespace    https://5iux.github.io/youhua
-// @version      2019.10.21.0
-// @description  本脚本主要针对淘内后台优化，优化链接http缺失、一键居中、模块去除10像素间距等；装修后台增加新窗口打开，欢迎交流使用;
+// @version      2019.12.26.0
+// @description  本脚本主要针对淘内后台优化，增加快捷方式、优化链接http缺失、一键居中、模块去除10像素间距等；装修后台增加新窗口打开，欢迎交流使用;
 // @author       D.Young
 // @match        *://siteadmin.tmall.com/module*
 // @match        *://mai.taobao.com/seller_admin.htm*
@@ -14,7 +14,7 @@
 // @match        *://siteadmin.taobao.com/preview.htm*
 // @match        *://login.taobao.com/member/login.jhtml*
 // @require      https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js
-// @require      https://raw.githubusercontent.com/5iux/youhua/master/youhua.js?t=20191021
+// @require      https://raw.githubusercontent.com/5iux/youhua/master/youhua.js?t=20191226
 // @grant        GM_addStyle
 // @run-at       document-end
 // ==/UserScript==
@@ -32,7 +32,7 @@
      //千牛二维码
      GM_addStyle('#J-qrcode-wrap{ display:none !important}#vl-preview-top{ position: absolute !important; }#J_MUIMallbar{display:none !important}.tshop-psm-shop-ww-hover{display:none !important}#HUABAN_WIDGETS{display:none !important }.bluegirl{ display: none; }.aw-wrapper{ display: none !important; }');
      //装修直达
-     GM_addStyle('.zxbtn{position: fixed; left: 50%; margin-left: -650px; z-index: 10000; opacity: 0.8; animation:dymove 1s infinite;}');
+     GM_addStyle('.zxbtn{position: fixed; left: 50%; margin-left: -680px; width:80px; z-index: 10000; opacity: 0.8; animation:dymove 1s infinite;}');
 
 
 })();

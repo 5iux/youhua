@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         韩都淘内优化连接
 // @namespace    https://5iux.github.io/youhua
-// @version      2019.12.26.0
+// @version      2019.12.26.1
 // @description  本脚本主要针对淘内后台优化，增加快捷方式、优化链接http缺失、一键居中、模块去除10像素间距等；装修后台增加新窗口打开，欢迎交流使用;
 // @author       D.Young
 // @match        *://siteadmin.tmall.com/module*
@@ -59,7 +59,7 @@
 .bluegirl{ display: none; }\
 .aw-wrapper{ display: none !important; }');
      //装修直达
-     GM_addStyle('.zxbtn{position: fixed; left: 50%; margin-left: -680px; width:80px; z-index: 10000; opacity: 0.8; animation:dymove 1s infinite;}');
+     GM_addStyle('.zxbtn{position: absolute; left: 50%; margin-left: -680px; width:80px; z-index: 10000; animation:dymove 1s infinite;}');
 
 
 })();

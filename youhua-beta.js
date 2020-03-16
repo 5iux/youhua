@@ -1,3 +1,5 @@
+$("[src$='editor-min.css']").attr('src', 'https://cdn.jsdelivr.net/gh/5iux/youhua@latest/editor-min.css');
+
 $("#mytaobao-panel .col-main").before('<div class="zxbtn">\
     <a href="https://wangpu.taobao.com/wirelessPageList.htm" target="_blank"><img src="https://img.alicdn.com/imgextra/i4/263817957/O1CN01WG9giL28eM4mTLRUo_!!263817957.png" alt=""></a>\
     <a href="https://wangpu.taobao.com/pcPageList.htm?#/selfDefine" target="_blank"><img src="https://img.alicdn.com/imgextra/i2/263817957/O1CN01KseKdH28eM4jwB4Al_!!263817957.png"></a>\

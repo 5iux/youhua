@@ -14,7 +14,7 @@
 // @match        *://siteadmin.taobao.com/preview.htm*
 // @match        *://login.taobao.com/member/login.jhtml*
 // @require      https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js
-// @require      https://cdn.jsdelivr.net/gh/5iux/youhua@latest/youhua.js
+// @require      https://cdn.jsdelivr.net/gh/5iux/youhua/youhua.js
 // @grant        GM_addStyle
 // @run-at       document-end
 // ==/UserScript==
@@ -65,7 +65,7 @@
     var link = doc.createElement("link");
     link.setAttribute("rel", "stylesheet");
     link.setAttribute("type", "text/css");
-    link.setAttribute("href", "https://cdn.jsdelivr.net/gh/5iux/youhua@latest/editor-min.css");
+    link.setAttribute("href", "https://cdn.jsdelivr.net/gh/5iux/youhua/editor-min.css");
     var heads = doc.getElementsByTagName("head");
     doc.documentElement.appendChild(link);
 })();

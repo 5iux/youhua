@@ -1399,3 +1399,666 @@ ks-editor-toolbar-padding {
 .ks-editor-xiami-page-more {
     padding: 0 10px
 }
+
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+form,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+    margin: 0;
+    padding: 0
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%
+}
+
+address,
+cite,
+dfn,
+em,
+var {
+    font-style: normal
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: courier new, courier, monospace
+}
+
+small {
+    font-size: 12px
+}
+
+ul,
+ol {
+    list-style: none
+}
+
+a {
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: underline
+}
+
+sup {
+    vertical-align: text-top
+}
+
+sub {
+    vertical-align: text-bottom
+}
+
+legend {
+    color: #000
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    display: block;
+    margin: 0;
+    padding: 0
+}
+
+mark {
+    background: #ff0
+}
+
+.hidden {
+    display: none
+}
+
+.disappear {
+    display: none
+}
+
+.clear-fix {
+    *zoom: 1
+}
+
+.clear-fix:after {
+    content: '\20';
+    display: block;
+    height: 0;
+    clear: both
+}
+
+.border-radius {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px
+}
+
+html {
+    background-color: #fff
+}
+
+.content {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    position: relative
+}
+
+.tab .nav {
+    border-bottom: 1px solid #E0E0E0;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px
+}
+
+.tab .nav li {
+    color: #666;
+    font-size: 14px;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 24px;
+    background-color: #ededed;
+    border: 1px solid #d4d4d4;
+    border-bottom-width: 0;
+    position: relative;
+    top: 2px;
+    padding: 0 10px;
+    margin-left: 3px
+}
+
+.tab .nav li.selected {
+    background-color: #fff;
+    color: #000;
+    height: 26px;
+    position: relative;
+    top: 1px
+}
+
+.tab .nav li span {
+    cursor: pointer;
+    display: block;
+    line-height: 24px
+}
+
+.form-default {
+    margin-top: 30px
+}
+
+.form-default label {
+    color: #2d2d2d
+}
+
+.form-default input,
+.form-default textarea,
+.form-default select {
+    display: inline-block
+}
+
+.form-default input.input-box,
+.form-default select.input-box {
+    display: inline-block;
+    height: 23px;
+    line-height: 23px;
+    vertical-align: middle;
+    border-top: 1px solid silver;
+    border-bottom: 1px solid #d9d9d9;
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #d9d9d9
+}
+
+.form-default input:focus,
+.form-default textarea:focus,
+.form-default select:hover {
+    border: 1px solid silver
+}
+
+.form-default select.input-box {
+    height: 25px;
+    line-height: 25px;
+    padding: 2px
+}
+
+.form-default textarea {
+    width: 360px;
+    height: 80px
+}
+
+.form-default .ks-editor-textarea {
+    width: 100%
+}
+
+.form-default input.input-box,
+.form-default select.input-box {
+    width: 220px
+}
+
+.form-default input.short {
+    width: 50px
+}
+
+.form-default input.long,
+.form-default select.long {
+    width: 300px
+}
+
+.form-default input.error,
+.form-default textarea.error {
+    border: 1px solid #ff8080
+}
+
+.form-default span.error {
+    color: red;
+    height: 23px;
+    padding-top: 0
+}
+
+.form-default p.error {
+    color: red;
+    height: 18px;
+    padding-left: 5px;
+    margin-top: 4px
+}
+
+.form-default .control-group {
+    margin-bottom: 10px;
+    *zoom: 1
+}
+
+.form-default .control-group:before,
+.form-default .control-group:after {
+    display: table;
+    content: ""
+}
+
+.form-default .control-group:after {
+    clear: both
+}
+
+.form-default .control {
+    margin-left: 110px
+}
+
+.form-default .control-label {
+    float: left;
+    width: 100px;
+    text-align: right
+}
+
+.form-default .control-label,
+.form-default .input-radio,
+.form-default .input-checkbox {
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    vertical-align: middle
+}
+
+.form-default .input-radio,
+.form-default .input-checkbox {
+    margin-right: 3px;
+    *margin-right: 0
+}
+
+.form-default .show-title-true,
+.form-default .title-input {
+    margin-left: 10px
+}
+
+.form-default input.title-input {
+    width: 110px
+}
+
+.form-default .checkbox.inline {
+    display: inline-block;
+    padding-top: 5px;
+    margin-bottom: 0;
+    vertical-align: middle
+}
+
+.form-default span.tips {
+    color: #999;
+    display: inline-block;
+    padding-left: 6px
+}
+
+.form-default .rc-box {
+    float: left;
+    margin-right: 22px
+}
+
+.form-default .rc-box label {
+    display: inline-block;
+    float: left;
+    padding-left: 4px
+}
+
+.form-default .rc-box input {
+    float: left
+}
+
+.opt-footer {
+    margin-top: 30px;
+    margin-left: 110px
+}
+
+.btn-ok {
+    border: 0 none;
+    background-color: #2D2D2D;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 12px;
+    vertical-align: middle;
+    padding: 6px 9px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px
+}
+
+.btn-disabled {
+    border: 0 none;
+    background-color: #999;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 12px;
+    vertical-align: middle;
+    padding: 6px 9px;
+    text-decoration: none;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px
+}
+
+.btn-ok:hover,
+.btn-ok-hover {
+    background-color: #5a5a5a
+}
+
+.btn-cancel {
+    border: 0 none;
+    background: none repeat scroll 0 0 transparent;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 12px;
+    vertical-align: middle;
+    padding: 6px 9px;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px
+}
+
+.btn-style-1 {
+    border: 1px solid #d4d4d4;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    height: 24px;
+    line-height: 22px;
+    padding: 0 12px;
+    vertical-align: middle;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px
+}
+
+.btn-style-1:hover {
+    border-color: #999;
+    text-decoration: none
+}
+
+.btn-style-1-disabled {
+    color: #999
+}
+
+.msg {
+    height: 23px;
+    border-width: 1px;
+    border-style: solid;
+    padding: 0 5px;
+    color: #424a4d
+}
+
+.msg .text {
+    display: inline-block;
+    height: 23px;
+    line-height: 23px;
+    vertical-align: middle
+}
+
+.opt-footer span.error {
+    height: 23px;
+    padding: 0 5px
+}
+
+.msg-icon {
+    background: url(//img.alicdn.com/tps/i1/T1z5PXXiBqXXc9Zi6h-48-59.png) no-repeat scroll 0 0 transparent;
+    display: inline-block;
+    height: 16px;
+    line-height: 23px;
+    width: 16px;
+    vertical-align: middle;
+    margin-right: 5px
+}
+
+.success {
+    display: inline-block;
+    border-color: #4dbf00
+}
+
+.success .msg-icon {
+    background-position: -23px -2px
+}
+
+.warn {
+    display: inline-block;
+    border-color: #2ea6f8
+}
+
+.warn .msg-icon {
+    background-position: -23px -43px
+}
+
+.failure {
+    display: inline-block;
+    border-color: #ff8080;
+    background-color: #fff2f2
+}
+
+.failure .msg-icon {
+    background-position: -23px -23px
+}
+
+.error {
+    display: inline-block;
+    border-color: #ff8080;
+    background-color: #fff2f2
+}
+
+.error .msg-icon {
+    background-position: -23px -23px
+}
+
+.helpLink {
+    position: absolute;
+    right: 35px;
+    cursor: pointer;
+    top: 10px
+}
+
+.helpLink .help-icon {
+    background: url(//gtms02.alicdn.com/tps/i2/T1jH3oFtFaXXaSQP_X-16-16.png) no-repeat;
+    width: 16px;
+    height: 16px;
+    _height: 17px;
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.helpLink span {
+    color: #666;
+    line-height: 16px;
+    height: 16px;
+    position: relative;
+    top: 1px;
+    _top: 0
+}
+
+.taeset {
+    position: absolute;
+    right: 25px;
+    cursor: pointer;
+    top: 10px;
+    border: 1px solid #ccc;
+    background-color: #eee
+}
+
+.taeset span {
+    color: #333;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 5px
+}
+
+.taeset:hover {
+    background-color: #ddd;
+    text-decoration: none
+}
+
+.content {
+    padding-top: 0
+}
+
+.form-default .control-label {
+    width: 78px
+}
+
+.form-default .control {
+    margin-left: 88px
+}
+
+.opt-footer {
+    width: 635px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    margin-left: 15px
+}
+
+.opt-footer a.btn-ok {
+    background-color: #2D2D2D;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+    padding: 3px 9px
+}
+
+.opt-footer a.btn-cancel {
+    border-radius: 2px;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 10px
+}
+
+.css-set {
+    padding: 0 15px
+}
+
+.ke-toolbar-flash {
+    display: none !important
+}
+
+.ke-editor-wrap {
+    border-color: silver
+}
+
+.ke-editor-tools {
+    height: 68px;
+    padding-left: 5px;
+    border-bottom-color: silver
+}
+
+.ke-editor-tools .ke-select-wrap {
+    margin-top: 5px
+}
+
+.ke-select-wrap {
+    margin: 5px 2px 0
+}
+
+.ke-editor-status {
+    border-top-color: silver
+}
+
+.ke-tri-button {
+    background: url(//assets.alicdn.com/tbra/1.0/assets/images/editor/icons.png)
+}
+
+.ke-image {
+    background-position: -22px -2px
+}
+
+.ke-flash {
+    background-position: -42px -2px
+}
+
+.ke-video {
+    background-position: -62px -2px
+}
+
+.ke-bm {
+    background: url(//img.alicdn.com/tps/i2/T1_r6EXaNeXXaSQP_X-16-16.png)
+}
+
+.head {
+    height: 60px;
+    line-height: 60px;
+    padding-left: 40px
+}
+
+.head .control {
+    _margin-top: 20px
+}
+
+.head .title,
+.head .control {
+    float: left;
+    padding-right: 18px
+}
+
+.head .text {
+    height: 24px;
+    line-height: 24px;
+    *margin-top: 18px
+}

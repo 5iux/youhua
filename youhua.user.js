@@ -1,7 +1,8 @@
 // ==UserScript==
+// @icon         https://www.taobao.com/favicon.ico
 // @name         韩都淘内优化连接
 // @namespace    https://5iux.github.io/youhua
-// @version      2020.03.17
+// @version      2020.04.01
 // @description  本脚本主要针对淘内后台优化，增加快捷方式、优化链接http缺失、一键居中、模块去除10像素间距等；装修后台增加新窗口打开，欢迎交流使用;
 // @author       D.Young
 // @match        *://siteadmin.tmall.com/module*
@@ -13,8 +14,8 @@
 // @match        *://siteadmin.tmall.com/preview.htm*
 // @match        *://siteadmin.taobao.com/preview.htm*
 // @match        *://login.taobao.com/member/login.jhtml*
-// @require      https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js
-// @require      https://cdn.jsdelivr.net/gh/5iux/youhua/youhua.js
+// @require      https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js
+// @require      https://cdn.jsdelivr.net/gh/5iux/youhua@latest/youhua.js
 // @grant        GM_addStyle
 // @run-at       document-end
 // ==/UserScript==
@@ -65,7 +66,7 @@
     var link = doc.createElement("link");
     link.setAttribute("rel", "stylesheet");
     link.setAttribute("type", "text/css");
-    link.setAttribute("href", "https://cdn.jsdelivr.net/gh/5iux/youhua/editor-min.css");
+    link.setAttribute("href", "https://cdn.jsdelivr.net/gh/5iux/youhua@latest/editor-min.css");
     var heads = doc.getElementsByTagName("head");
     doc.documentElement.appendChild(link);
 })();

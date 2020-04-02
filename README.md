@@ -31,4 +31,4 @@
 >火狐浏览器无法直接装修操作，推荐我的文章 → [《使用火狐装修淘宝商家后台》](https://yyv.me/4748.html)
 
 **2.安装脚本
->[点击安装脚本](https://cdn.jsdelivr.net/gh/5iux/youhua@master/youhua.user.js)
+>[点击安装脚本](https://cdn.jsdelivr.net/gh/5iux/youhua/youhua.user.js)

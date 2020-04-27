@@ -1,5 +1,5 @@
 /*
-Date:2020.04.02
+Date:2020.04.27
 */
 $("#mytaobao-panel .col-main").before('<div class="zxbtn">\
     <a href="https://wangpu.taobao.com/wirelessPageList.htm" target="_blank">\
@@ -120,7 +120,7 @@ $(document).ready(function() {
         $(".yy_message").fadeOut();
     });
  });
-
+/*
 $(document).ready(function() {
   //复制样式表
 
@@ -138,7 +138,7 @@ $(document).ready(function() {
         $(this).text("复制");
     });
 });
-
+*/
 
 //间距
 $(document).ready(function() {

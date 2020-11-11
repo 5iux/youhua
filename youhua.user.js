@@ -2,7 +2,7 @@
 // @icon         https://www.taobao.com/favicon.ico
 // @name         韩都淘内优化连接
 // @namespace    https://5iux.github.io/youhua
-// @version      2020.11.12
+// @version      2020.11.12.1
 // @description  本脚本主要针对淘内后台优化，增加快捷方式、优化链接http缺失、一键居中、模块去除10像素间距等；装修后台增加新窗口打开，欢迎交流使用;
 // @author       D.Young
 // @match        *://siteadmin.tmall.com/module*
@@ -16,7 +16,7 @@
 // @match        *://siteadmin.taobao.com/preview.htm*
 // @match        *://login.taobao.com/member/login.jhtml*
 // @require      https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js
-// @require      https://cdn.jsdelivr.net/gh/5iux/youhua@master/youhua.js?t=20200427
+// @require      https://cdn.jsdelivr.net/gh/5iux/youhua/youhua.js?t=20201112
 // @grant        GM_addStyle
 // @run-at       document-end
 // ==/UserScript==

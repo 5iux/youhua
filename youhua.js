@@ -1,7 +1,7 @@
 /*
-Date:2020.04.27
+Date:2020.11.12
 */
-$("#mytaobao-panel .col-main").before('<div class="zxbtn">\
+$("#module-400").before('<div class="zxbtn indexpanel-3uit1 indexpanel-animation-3PvcE">\
     <a href="https://wangpu.taobao.com/wirelessPageList.htm" target="_blank">\
        <img src="https://img.alicdn.com/imgextra/i4/263817957/O1CN01WG9giL28eM4mTLRUo_!!263817957.png" alt=""></a>\
     <a href="https://wangpu.taobao.com/pcPageList.htm?#/selfDefine" target="_blank">\

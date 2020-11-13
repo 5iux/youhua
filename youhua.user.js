@@ -15,7 +15,7 @@
 // @match        *://siteadmin.tmall.com/preview.htm*
 // @match        *://siteadmin.taobao.com/preview.htm*
 // @require      https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js
-// @require      https://cdn.jsdelivr.net/gh/5iux/youhua/youhua.js?t=2020111302
+// @require      https://github.com/5iux/youhua/raw/master/youhua.js?t=2020111302
 // @grant        GM_addStyle
 // @run-at       document-end
 // ==/UserScript==

@@ -1,5 +1,5 @@
 /*
-Date:2020.11.13.01
+Date:2020.11.13.03
 */
 $("#container").before('<div class="zxbtn">\
     <a class="zx_a" href="https://wangpu.taobao.com/wirelessPageList.htm" target="_blank">\
@@ -14,7 +14,13 @@ $("#container").before('<div class="zxbtn">\
        <img src="https://img.alicdn.com/imgextra/i4/263817957/O1CN013lDApg28eM5LUxdWB_!!263817957.png" alt=""></a>\
     <a class="zx_a" href="https://sucai.wangpu.taobao.com/#/manage/video" target="_blank">\
        <img src="https://img.alicdn.com/imgextra/i2/263817957/O1CN01OJRQWv28eM5TubmuJ_!!263817957.png" alt=""></a>\
-    </div>');
+    <a class="zx_a" href="https://sycm.taobao.com/portal/home.htm" target="_blank">\
+       <img src="https://img.alicdn.com/imgextra/i4/263817957/O1CN011npJKm28eM8BS8p9S_!!263817957.png" alt=""></a>\
+    <a class="zx_a" href="https://h5.m.taobao.com/qn/pc/2-03-00/plugin-guide.html?appkey=12502150" target="_blank">\
+       <img src="https://img.alicdn.com/imgextra/i2/263817957/O1CN01Ddumeg28eM8ItmfPT_!!263817957.png" alt=""></a>\
+    <a class="zx_a" href="https://h5.m.taobao.com/qn/pc/2-03-00/plugin-guide.html?appkey=21797241" target="_blank">\
+       <img src="https://img.alicdn.com/imgextra/i1/263817957/O1CN01z1PzMB28eM8DS7ukx_!!263817957.png" alt=""></a>\
+</div>');
 $(document).ready(function(e) {
     $("#TPL_password_1").attr('type;', 'text');
   //强制店铺装修到装修页面

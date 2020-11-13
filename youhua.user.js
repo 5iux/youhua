@@ -2,7 +2,7 @@
 // @icon         https://www.taobao.com/favicon.ico
 // @name         韩都淘内优化连接
 // @namespace    https://5iux.github.io/youhua
-// @version      2020.11.13.04
+// @version      2020.11.13.05
 // @description  本脚本主要针对淘内后台优化，增加快捷方式、优化链接http缺失、一键居中、模块去除10像素间距等；装修后台增加新窗口打开，欢迎交流使用;
 // @author       D.Young
 // @match        *://siteadmin.tmall.com/module*
@@ -61,7 +61,7 @@
     //装修直达
     GM_addStyle('.zxbtn{width: 900px; height:70px; position: absolute; left:240px; top:32px; z-index: 30000; }\
 .zxbtn .zx_a{display:block; width:66px; float:left;position:relative; transition: 0.3s all;}\
-.zxbtn .zx_a{transform: scale(1.2);}\
+.zxbtn .zx_a:hover{transform: scale(1.2);}\
 .zxbtn .zx_a img{width:100%;}');
     //优化编辑器样式cdn
     var doc = document;

@@ -59,7 +59,7 @@
 .bluegirl{ display: none; }\
 .aw-wrapper{ display: none !important; }');
     //装修直达
-    GM_addStyle('.zxbtn{width: 500px; height:70px; position: absolute; left:240px; top:32px; z-index: 30000; }\
+    GM_addStyle('.zxbtn{width: 900px; height:70px; position: absolute; left:240px; top:32px; z-index: 30000; }\
 .zxbtn .zx_a{display:block; width:66px; float:left}\
 .zxbtn .zx_a img{width:100%;}');
     //优化编辑器样式cdn

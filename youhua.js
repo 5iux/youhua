@@ -2,27 +2,26 @@
 Date:2020.12.21.01
 */
 $("#container").before('<div class="zxbtn">\
-    <a class="zx_a" href="https://wangpu.taobao.com/wirelessPageList.htm?version=1.0#/shop_index-index/basic?tabId=0" target="_blank">\
+    <a class="zx_a" href="https://wangpu.taobao.com/wirelessPageList.htm?version=1.0#/shop_index-index/basic?tabId=0" target="_blank" title="无线店铺装修">\
        <img src="https://img.alicdn.com/imgextra/i4/263817957/O1CN01WG9giL28eM4mTLRUo_!!263817957.png" alt=""></a>\
-    <a class="zx_a" href="https://wangpu.taobao.com/pcPageList.htm?#/selfDefine" target="_blank">\
+    <a class="zx_a" href="https://wangpu.taobao.com/pcPageList.htm?#/selfDefine" target="_blank" title="PC店铺装修">\
        <img src="https://img.alicdn.com/imgextra/i2/263817957/O1CN01KseKdH28eM4jwB4Al_!!263817957.png"></a>\
-    <a class="zx_a" href="https://meidian.play.admin.jaeapp.com/back/back_list.htm" target="_blank">\
+    <a class="zx_a" href="https://meidian.play.admin.jaeapp.com/back/back_list.htm" target="_blank" title="美店">\
        <img src="https://img.alicdn.com/imgextra/i1/263817957/O1CN01mBdgDo28eM4lPscky_!!263817957.png" alt=""></a>\
-    <a class="zx_a" href="https://wxbadmin.hz.taeapp.com/index.php?c=activity&m=index" target="_blank">\
+    <a class="zx_a" href="https://wxbadmin.hz.taeapp.com/index.php?c=activity&m=index" target="_blank" title="无线宝">\
        <img src="https://img.alicdn.com/imgextra/i3/263817957/O1CN01cYWqsD28eM4iTgIyG_!!263817957.png" alt=""></a>\
-    <a class="zx_a" href="https://sucai.wangpu.taobao.com/" target="_blank">\
+    <a class="zx_a" href="https://sucai.wangpu.taobao.com/" target="_blank" title="图片空间">\
        <img src="https://img.alicdn.com/imgextra/i4/263817957/O1CN013lDApg28eM5LUxdWB_!!263817957.png" alt=""></a>\
-    <a class="zx_a" href="https://sucai.wangpu.taobao.com/#/manage/video" target="_blank">\
+    <a class="zx_a" href="https://sucai.wangpu.taobao.com/#/manage/video" target="_blank" title="视频媒体空间">\
        <img src="https://img.alicdn.com/imgextra/i2/263817957/O1CN01OJRQWv28eM5TubmuJ_!!263817957.png" alt=""></a>\
-    <a class="zx_a" href="https://sycm.taobao.com/portal/home.htm" target="_blank">\
+    <a class="zx_a" href="https://sycm.taobao.com/portal/home.htm" target="_blank" title="生意参谋">\
        <img src="https://img.alicdn.com/imgextra/i4/263817957/O1CN011npJKm28eM8BS8p9S_!!263817957.png" alt=""></a>\
-    <a class="zx_a" href="https://h5.m.taobao.com/qn/pc/2-03-00/plugin-guide.html?appkey=12502150" target="_blank">\
+    <a class="zx_a" href="https://h5.m.taobao.com/qn/pc/2-03-00/plugin-guide.html?appkey=12502150" target="_blank" title="商品批量修改">\
        <img src="https://img.alicdn.com/imgextra/i2/263817957/O1CN01Ddumeg28eM8ItmfPT_!!263817957.png" alt=""></a>\
-    <a class="zx_a" href="https://h5.m.taobao.com/qn/pc/2-03-00/plugin-guide.html?appkey=21797241" target="_blank">\
+    <a class="zx_a" href="https://h5.m.taobao.com/qn/pc/2-03-00/plugin-guide.html?appkey=21797241" target="_blank" title="盛夏建站插件">\
        <img src="https://img.alicdn.com/imgextra/i1/263817957/O1CN01z1PzMB28eM8DS7ukx_!!263817957.png" alt=""></a>\
 </div>');
 $(document).ready(function(e) {
-    $("#TPL_password_1").attr('type;', 'text');
   //强制店铺装修到装修页面
  /*$("#J_QuickMenu").find("a:contains('店铺装修')").css('color', 'red');
  $("#J_QuickMenu").find("a:contains('店铺装修')").attr('href', 'https://wangpu.taobao.com/pcPageList.htm?#/selfDefine');*/

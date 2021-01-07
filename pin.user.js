@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         pinterest美化
+// @name         pinterest优化
 // @namespace    https://blog.5iux.cn
-// @version      0.1.4
+// @version      0.1.5
 // @description  简单美化下pinterest,主要针对部分圆角过大调整、调整部分字体字号，整体更换为等线体。
 // @author       DYoung
 // @include      https://*.pinterest.tld/*
@@ -32,6 +32,7 @@
        .XiG.zI7.iyn.Hsu{border-radius:10px !important;}\
        .Jea.mQ8.ujU.zI7.iyn.Hsu {border-radius: 10px !important;}\
        .MIw.QLY.Rym.ojN.p6V.zI7.iyn.Hsu {border-radius: 5px !important;}\
+       .Jea.fev.gpV.zI7.iyn.Hsu { border-radius: 10px;}\
   </style>');
 
     // Your code here...

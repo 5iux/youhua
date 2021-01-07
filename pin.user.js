@@ -31,7 +31,7 @@
        .sLG.zI7.iyn.Hsu{border-radius:10px !important;}\
        .XiG.zI7.iyn.Hsu{border-radius:10px !important;}\
        .Jea.mQ8.ujU.zI7.iyn.Hsu {border-radius: 10px !important;}\
-       .MIw.QLY.Rym.ojN.p6V.zI7.iyn.Hsu {border-radius: 5px !important;border: 3px solid #eee !important;}\
+       .MIw.QLY.Rym.ojN.p6V.zI7.iyn.Hsu {border-radius: 5px !important;}\
   </style>');
 
     // Your code here...

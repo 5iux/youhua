@@ -1,5 +1,6 @@
 // ==UserScript==
 // @name         在豆瓣搜索直达
+// @icon         https://img3.doubanio.com/favicon.ico
 // @namespace    https://syys.ml/
 // @version      0.0.2
 // @description:zh-CN 在豆瓣电影页面标题处显示搜索页的直达按钮

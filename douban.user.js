@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         在豆瓣搜索直达
 // @namespace    https://syys.ml/
-// @version      0.0.1
+// @version      0.0.2
 // @description:zh-CN 在豆瓣电影页面标题处显示搜索页的直达按钮
 // @author       D.Young
 // @match        *://movie.douban.com/subject/*
@@ -21,7 +21,7 @@
         subjectwrap.insertBefore(sectl, subject.nextSibling);
         sectl.insertAdjacentHTML('beforebegin',
 `<style>.syys_ml{vertical-align: middle;}.syys_ml:hover{background: #fff!important;}</style>
-<a href="https://syys.ml/search.php?v=${title}" class="syys_ml" target="_blank">
+<a href="https://syys.ml/index.php/vod/search.html?wd=${title}" class="syys_ml" target="_blank">
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 25.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"

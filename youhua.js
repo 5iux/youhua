@@ -8,7 +8,7 @@ $("#container").before('<div class="zxbtn">\
        <img src="https://img.alicdn.com/imgextra/i2/263817957/O1CN01KseKdH28eM4jwB4Al_!!263817957.png"></a>\
     <a class="zx_a" href="https://meidian.play.admin.jaeapp.com/back/back_list.htm" target="_blank" title="美店">\
        <img src="https://img.alicdn.com/imgextra/i1/263817957/O1CN01mBdgDo28eM4lPscky_!!263817957.png" alt=""></a>\
-    <a class="zx_a" href="https://wxbadmin.hz.taeapp.com/index.php?c=activity&m=index" target="_blank" title="无线宝">\
+    <a class="zx_a" href="https://wxbadmin.guanmeikj.com/index.php?c=activity&m=index&ne=v#/manage/wireless/wire" target="_blank" title="无线宝">\
        <img src="https://img.alicdn.com/imgextra/i3/263817957/O1CN01cYWqsD28eM4iTgIyG_!!263817957.png" alt=""></a>\
     <a class="zx_a" href="https://sucai.wangpu.taobao.com/" target="_blank" title="图片空间">\
        <img src="https://img.alicdn.com/imgextra/i4/263817957/O1CN013lDApg28eM5LUxdWB_!!263817957.png" alt=""></a>\

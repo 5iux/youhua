@@ -1,12 +1,10 @@
 /*
-Date:2021.07.27.01
+Date:2021.08.06.01
 */
 $("#container").before('<div class="zxbtn">\
-    <a class="zx_a" href="https://wangpu.taobao.com/wirelessPageList.htm?version=1.0#/shop_index-index/basic?tabId=0" target="_blank" title="旧版无线">\
-       <img src="https://img.alicdn.com/imgextra/i1/263817957/O1CN013WUBlL28eMBuK2hYq_!!263817957.png" alt=""></a>\
     <a class="zx_a" href="https://wangpu.taobao.com/wirelessPageList.htm" target="_blank" title="无线店铺装修">\
        <img src="https://img.alicdn.com/imgextra/i4/263817957/O1CN01WG9giL28eM4mTLRUo_!!263817957.png" alt=""></a>\
-    <a class="zx_a" href="https://wangpu.taobao.com/pcPageList.htm?#/selfDefine" target="_blank" title="PC店铺装修">\
+    <a class="zx_a" href="https://wangpu.taobao.com/wpFramework.htm#/wpdecorate/pcPageList" target="_blank" title="PC店铺装修">\
        <img src="https://img.alicdn.com/imgextra/i2/263817957/O1CN01KseKdH28eM4jwB4Al_!!263817957.png"></a>\
     <a class="zx_a" href="https://console.meidian.com/#/index" target="_blank" title="美店">\
        <img src="https://img.alicdn.com/imgextra/i1/263817957/O1CN01mBdgDo28eM4lPscky_!!263817957.png" alt=""></a>\
@@ -26,15 +24,6 @@ $("#container").before('<div class="zxbtn">\
        <img src="https://img.alicdn.com/imgextra/i4/263817957/O1CN01uDtAol28eM8cxcgxt_!!263817957.png" alt=""></a>\
 </div>');
 $(document).ready(function(e) {
-  //强制店铺装修到装修页面
- /*$("#J_QuickMenu").find("a:contains('店铺装修')").css('color', 'red');
- $("#J_QuickMenu").find("a:contains('店铺装修')").attr('href', 'https://wangpu.taobao.com/pcPageList.htm?#/selfDefine');*/
-   //强制跳转到PC装修
-//$("#client-tab #client-pc").click();
-  /*$("#client-tab #client-pc").addClass("selected");
-$("#client-tab #client-mobile").removeClass("selected");
- $("#mobile-page").css("display","none");
- $(".shop-tmall.page-current").removeClass("page-current");*/
  //编辑器添加优化按钮    
  $(".form-default[name=editform]").before('<div class="yy_yh1124" style="position:absolute;">\
     <div class="yy_btn yy_btn01">优化链接</div>\

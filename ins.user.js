@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name                Instagram 下载器
-// @version             1.0
+// @version             1.1.0
 // @compatible          chrome
 // @compatible          firefox
 // @compatible          edge
@@ -150,9 +150,9 @@
         newBtn.onclick = onClickHandler;
         if (attachLink) newBtn.onmouseenter = onMouseInHandler;
         if (className.includes("newtab")) {
-            newBtn.setAttribute("title", "Open in new tab");
+            newBtn.setAttribute("title", "新窗口打开");
         } else {
-            newBtn.setAttribute("title", "Download");
+            newBtn.setAttribute("title", "点击下载");
         }
         return newBtn;
     }

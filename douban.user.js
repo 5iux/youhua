@@ -2,7 +2,7 @@
 // @name         在豆瓣搜索直达
 // @icon         https://img3.doubanio.com/favicon.ico
 // @namespace    https://syys.ml/
-// @version      0.0.2
+// @version      0.0.6
 // @description:zh-CN 在豆瓣电影页面标题处显示搜索页的直达按钮
 // @author       D.Young
 // @match        *://movie.douban.com/subject/*
@@ -21,8 +21,8 @@
         const sectl = document.createElement('span');
         subjectwrap.insertBefore(sectl, subject.nextSibling);
         sectl.insertAdjacentHTML('beforebegin',
-`<style>.syys_ml{vertical-align: middle;}.syys_ml:hover{background: #fff!important;}</style>
-<a href="https://syys.ml/index.php/vod/search.html?wd=${title}" class="syys_ml" target="_blank">
+`<style>.youkux{vertical-align: middle;}.youkux:hover{background: #fff!important;}</style>
+<a href="https://youkux.ml/vodsearch/-------------.html?wd=${title}" class="youkux" target="_blank">
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 25.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"

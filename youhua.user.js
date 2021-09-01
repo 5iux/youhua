@@ -2,7 +2,7 @@
 // @icon         https://img.alicdn.com/tps/i3/T1OjaVFl4dXXa.JOZB-114-114.png
 // @name         韩都淘内优化连接
 // @namespace    https://5iux.github.io/youhua
-// @version      2021.08.06.01
+// @version      2021.09.01.01
 // @description  本脚本主要针对淘内后台优化，增加快捷方式、优化链接http缺失、一键居中、模块去除10像素间距等；装修后台增加新窗口打开，欢迎交流使用;
 // @author       D.Young
 // @match        *://siteadmin.tmall.com/module*
@@ -15,7 +15,7 @@
 // @match        *://siteadmin.tmall.com/preview.htm*
 // @match        *://siteadmin.taobao.com/preview.htm*
 // @require      https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js
-// @require      https://cdn.jsdelivr.net/gh/5iux/youhua/youhua.js?t=2021080601
+// @require      https://cdn.jsdelivr.net/gh/5iux/youhua/youhua.js?t=2021090101
 // @grant        GM_addStyle
 // @run-at       document-end
 // ==/UserScript==
@@ -48,27 +48,9 @@
 .yy_msg .yy_button { width: 120px; height: 30px; float: left; margin: 20px 0 0 40px; text-align: center; height: 26px; line-height: 26px; background: #F63; color: #fff; border-radius: 13px; cursor: pointer; border: none; padding: 0; outline: none; }\
 .yy_msg .yy_button:active { background: #F30; }\
 .yy_msg i{ clear: both; display: block; width: 100%; height:10px; }');
-    //超级css编辑器
-    GM_addStyle('.yycopy{ width: 80px !important; }\
- .vl-sidebar .toolbar .css-slide .J_CSSText.csstext { width: 100%; }');
-    //千牛二维码
-    GM_addStyle('#J-qrcode-wrap{ display:none !important}\
-#vl-preview-top{ position: absolute !important; }\
-#J_MUIMallbar{display:none !important}\
-.tshop-psm-shop-ww-hover{display:none !important}\
-.bluegirl{ display: none; }\
-.aw-wrapper{ display: none !important; }');
     //装修直达
     GM_addStyle('.zxbtn{width: 900px; height:70px; position: absolute; left:240px; top:32px; z-index: 30000; }\
 .zxbtn .zx_a{display:block; width:66px; float:left;position:relative; transition: 0.3s all;}\
 .zxbtn .zx_a:hover{transform: scale(1.2);}\
 .zxbtn .zx_a img{width:100%;}');
-    //优化编辑器样式cdn
-   /* var doc = document;
-    var link = doc.createElement("link");
-    link.setAttribute("rel", "stylesheet");
-    link.setAttribute("type", "text/css");
-    link.setAttribute("href", "https://cdn.jsdelivr.net/gh/5iux/youhua@master/editor-min.css");
-    var heads = doc.getElementsByTagName("head");
-    doc.documentElement.appendChild(link);*/
 })();

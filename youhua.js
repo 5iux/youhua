@@ -1,5 +1,5 @@
 /*
-Date:2021.08.06.01
+Date:2021.09.01.01
 */
 $("#container").before('<div class="zxbtn">\
     <a class="zx_a" href="https://wangpu.taobao.com/wirelessPageList.htm" target="_blank" title="无线店铺装修">\
@@ -18,8 +18,6 @@ $("#container").before('<div class="zxbtn">\
        <img src="https://img.alicdn.com/imgextra/i4/263817957/O1CN011npJKm28eM8BS8p9S_!!263817957.png" alt=""></a>\
     <a class="zx_a" href="https://h5.m.taobao.com/qn/pc/2-03-00/plugin-guide.html?appkey=12502150" target="_blank" title="商品批量修改">\
        <img src="https://img.alicdn.com/imgextra/i2/263817957/O1CN01Ddumeg28eM8ItmfPT_!!263817957.png" alt=""></a>\
-    <a class="zx_a" href="https://h5.m.taobao.com/qn/pc/2-03-00/plugin-guide.html?appkey=21797241" target="_blank" title="盛夏建站插件">\
-       <img src="https://img.alicdn.com/imgextra/i1/263817957/O1CN01z1PzMB28eM8DS7ukx_!!263817957.png" alt=""></a>\
     <a class="zx_a" href="https://sell.manage.tmall.com/tmall/manager/render.htm" target="_blank" title="全部宝贝">\
        <img src="https://img.alicdn.com/imgextra/i4/263817957/O1CN01uDtAol28eM8cxcgxt_!!263817957.png" alt=""></a>\
 </div>');

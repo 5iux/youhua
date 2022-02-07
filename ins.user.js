@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name                Instagram 下载器
-// @version             1.1.0
+// @version             1.9.5
 // @compatible          chrome
 // @compatible          firefox
 // @compatible          edge
@@ -10,7 +10,6 @@
 // @grant               none
 // @license             MIT
 // ==/UserScript==
-
 (function () {
     'use strict';
     // =================
@@ -23,6 +22,7 @@
     // ==================
 
     function yyyymmdd(date) {
+        // ref: https://stackoverflow.com/questions/3066586/get-string-in-yyyymmdd-format-from-js-date-object?page=1&tab=votes#tab-top
         var mm = date.getMonth() + 1; // getMonth() is zero-based
         var dd = date.getDate();
 
@@ -33,7 +33,7 @@
     }
 
     var svgDownloadBtn =
-        `<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="22" width="22"
+        `<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="24" width="24"
 	 viewBox="0 0 477.867 477.867" style="fill:%color;" xml:space="preserve">
 	<g>
 		<path d="M443.733,307.2c-9.426,0-17.067,7.641-17.067,17.067v102.4c0,9.426-7.641,17.067-17.067,17.067H68.267
@@ -49,7 +49,7 @@
 </svg>`;
 
     var svgNewtabBtn =
-        `<svg id="Capa_1" style="fill:%color;" viewBox="0 0 482.239 482.239" xmlns="http://www.w3.org/2000/svg" height="22" width="22">
+        `<svg id="Capa_1" style="fill:%color;" viewBox="0 0 482.239 482.239" xmlns="http://www.w3.org/2000/svg" height="24" width="24">
     <path d="m465.016 0h-344.456c-9.52 0-17.223 7.703-17.223 17.223v86.114h-86.114c-9.52 0-17.223 7.703-17.223 17.223v344.456c0 9.52 7.703 17.223 17.223 17.223h344.456c9.52 0 17.223-7.703 17.223-17.223v-86.114h86.114c9.52 0 17.223-7.703 17.223-17.223v-344.456c0-9.52-7.703-17.223-17.223-17.223zm-120.56 447.793h-310.01v-310.01h310.011v310.01zm103.337-103.337h-68.891v-223.896c0-9.52-7.703-17.223-17.223-17.223h-223.896v-68.891h310.011v310.01z"/>
 </svg>`;
 
@@ -61,7 +61,7 @@
         if (event.altKey && event.key === 'k') {
             let buttons = document.getElementsByClassName('download-btn');
             if (buttons.length > 0) {
-                let mockEvent = { currentTarget: buttons[buttons.length-1] };
+                let mockEvent = { currentTarget: buttons[buttons.length - 1] };
                 if (attachLink) onMouseInHandler(mockEvent);
                 onClickHandler(mockEvent);
             }
@@ -69,7 +69,7 @@
         if (event.altKey && event.key === 'i') {
             let buttons = document.getElementsByClassName('newtab-btn');
             if (buttons.length > 0) {
-                let mockEvent = { currentTarget: buttons[buttons.length-1] };
+                let mockEvent = { currentTarget: buttons[buttons.length - 1] };
                 if (attachLink) onMouseInHandler(mockEvent);
                 onClickHandler(mockEvent);
             }
@@ -94,13 +94,19 @@
 
     var checkExistTimer = setInterval(function () {
         let sharePostSelector = "article section span button";
-        let menuSeletor = "header button > span";
-        let storySeletor = "header button > span";
+        let storySeletor = "header button > div";
         let profileSelector = "header section svg circle";
+
+        // check profile
+        if (document.getElementsByClassName("custom-btn").length === 0) {
+            if (document.querySelector(profileSelector)) {
+                addCustomBtn(document.querySelector(profileSelector), "black", append2Header);
+            }
+        }
 
         // check story
         if (document.getElementsByClassName("custom-btn").length === 0) {
-            if (document.querySelector(menuSeletor)) {
+            if (document.querySelector(storySeletor)) {
                 addCustomBtn(document.querySelector(storySeletor), "white", append2Post);
             }
         }
@@ -111,13 +117,6 @@
             if (articleList[i].querySelector(sharePostSelector) &&
                 articleList[i].getElementsByClassName("custom-btn").length === 0) {
                 addCustomBtn(articleList[i].querySelector(sharePostSelector), "black", append2Post);
-            }
-        }
-
-        // check profile
-        if (document.getElementsByClassName("custom-btn").length === 0) {
-            if (document.querySelector(profileSelector)) {
-                addCustomBtn(document.querySelector(profileSelector), "black", append2Header);
             }
         }
     }, 500);
@@ -150,9 +149,9 @@
         newBtn.onclick = onClickHandler;
         if (attachLink) newBtn.onmouseenter = onMouseInHandler;
         if (className.includes("newtab")) {
-            newBtn.setAttribute("title", "新窗口打开");
+            newBtn.setAttribute("title", "Open in new tab");
         } else {
-            newBtn.setAttribute("title", "点击下载");
+            newBtn.setAttribute("title", "Download");
         }
         return newBtn;
     }
@@ -198,7 +197,7 @@
         if (url.length > 0) {
             // check url
             if (target.getAttribute("class").includes("download-btn")) {
-                // generate filename 
+                // generate filename
                 let posterName = document.querySelector('header h2').textContent;
                 filename = posterName + filename;
                 downloadResource(url, filename);
@@ -238,7 +237,7 @@
                 let datetime = new Date(articleNode.querySelector('time').getAttribute('datetime'));
                 datetime = yyyymmdd(datetime) + '_' + datetime.toTimeString().split(' ')[0].replace(/:/g, '');
                 let posterName = articleNode.querySelector('header a').getAttribute('href').replace(/\//g, '');
-                
+
                 let filename = filenameFormat(postFilenameTemplate, posterName, datetime, mediaName, ext);
                 downloadResource(url, filename);
             } else {
@@ -304,7 +303,7 @@
     async function fetchVideoURL(articleNode, videoElem) {
         let poster = videoElem.getAttribute('poster');
         let timeNodes = articleNode.querySelectorAll('time');
-        let posterUrl = timeNodes[timeNodes.length-1].parentNode.href;
+        let posterUrl = timeNodes[timeNodes.length - 1].parentNode.href;
         let posterPattern = /\/([^\/?]*)\?/;
         let posterMatch = poster.match(posterPattern);
         let postFileName = posterMatch[1];
@@ -313,6 +312,7 @@
         let content = await resp.text();
         let match = content.match(pattern);
         let videoUrl = JSON.parse(match[1]);
+        videoUrl = videoUrl.replace(/^(?:https?:\/\/)?(?:[^@\/\n]+@)?(?:www\.)?([^:\/?\n]+)/g, 'https://scontent.cdninstagram.com');
         videoElem.setAttribute('videoURL', videoUrl)
         return videoUrl;
     }
@@ -390,6 +390,7 @@
     }
 
     function forceDownload(blob, filename) {
+        // ref: https://stackoverflow.com/questions/49474775/chrome-65-blocks-cross-origin-a-download-client-side-workaround-to-force-down
         var a = document.createElement('a');
         a.download = filename;
         a.href = blob;
@@ -401,6 +402,8 @@
 
     // Current blob size limit is around 500MB for browsers
     function downloadResource(url, filename) {
+        // ref: https://stackoverflow.com/questions/49474775/chrome-65-blocks-cross-origin-a-download-client-side-workaround-to-force-down
+        console.log(url);
         if (!filename) filename = url.split('\\').pop().split('/').pop();
         fetch(url, {
             headers: new Headers({
